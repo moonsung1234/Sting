@@ -256,11 +256,12 @@ function load() {
                 point1.innerText = Number(point1.innerText) + 1;
 
         } else if(state == "guard") {
+            is_pause = false;
+
             socket.emit("state", [ids[0], "state1", x, y]);
             socket.emit("state", [ids[1], "state1", player[ids[1]].x, player[ids[1]].y]);
 
             return;
-        
         }
         
         if(state == "game win") {
