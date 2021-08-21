@@ -1,0 +1,113 @@
+
+html, body {
+    background-image: url("https://previews.123rf.com/images/karenr/karenr1510/karenr151000100/45992777-%EB%85%B9%EC%83%89-%ED%9D%B0%EC%83%89-%EB%B0%8F-%EA%B2%80%EC%9D%80-%EC%83%89-%ED%8F%B4%EC%B9%B4-%EB%8F%84%ED%8A%B8-%EB%AC%B4%EB%8A%AC-%ED%83%80%EC%9D%BC-%ED%8C%A8%ED%84%B4-%EB%B0%98%EB%B3%B5-%EB%B0%8F-%EB%B0%98%EB%B3%B5%EB%90%98%EB%8A%94-%EB%B0%B0%EA%B2%BD-%EB%B0%98%EB%B3%B5.jpg");
+}
+
+div.container {
+    background-color: white;
+    position: absolute;
+    display: block;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 30%;
+    height: 70%;
+    right: calc(50% - 15%);
+    top: 15%;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+span.title {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    /* border-bottom: 2px solid black; */
+}
+
+span.title span {
+    position: relative;
+    top: 30%;
+}
+
+span.id {
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+
+span.id input {
+    position: relative;
+    background-color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    border-bottom: 3px solid gray;
+    width: 70%;
+    height: 30%;
+    top: calc(50% - 15%);
+    left: 15%;
+}
+
+span.password {
+    display: block;
+    width: 100%;
+    height: 22%;
+}
+
+span.password input {
+    position: relative;
+    background-color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    border-bottom: 3px solid gray;
+    width: 70%;
+    height: 30%;
+    top: calc(50% - 15%);
+    left: 15%;
+}
+
+span.login {
+    display: block;
+    width: 100%;
+    height: 22%; 
+}
+
+span.login input {
+    position: relative;
+    width: 70%;
+    height: 40%;
+    left: 15%;
+    top: 25%;
+    background-color: rgb(161, 160, 160);
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+span.login input:hover {
+    background-color: rgb(175, 170, 170);
+}
+
+span.signup {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    height: 15%;
+}
+
+span.signup a {
+    color: blue;
+}
+
+span.signup span, span.signup a {
+    position: relative;
+    top: 5%;
+    left: 27%;
+}

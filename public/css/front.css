@@ -1,0 +1,113 @@
+
+html, body {
+    width: 99%;
+    height: 99%;
+    background-image: url("https://previews.123rf.com/images/karenr/karenr1510/karenr151000100/45992777-%EB%85%B9%EC%83%89-%ED%9D%B0%EC%83%89-%EB%B0%8F-%EA%B2%80%EC%9D%80-%EC%83%89-%ED%8F%B4%EC%B9%B4-%EB%8F%84%ED%8A%B8-%EB%AC%B4%EB%8A%AC-%ED%83%80%EC%9D%BC-%ED%8C%A8%ED%84%B4-%EB%B0%98%EB%B3%B5-%EB%B0%8F-%EB%B0%98%EB%B3%B5%EB%90%98%EB%8A%94-%EB%B0%B0%EA%B2%BD-%EB%B0%98%EB%B3%B5.jpg");
+}
+
+div.container {
+    width: 100%;
+    height: 100%;
+}
+
+div.title {
+    position: absolute;
+    display: inline;
+    font-size: 220px;
+    width: 500px;
+    height: 50%;
+    color: black;
+    -webkit-text-stroke: 3px white;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+div.button {
+    position: relative;
+    width : 100%;
+    top : calc(50% + 60px);
+    text-align: center;
+}
+
+div.button input {
+    width: 300px;
+    height: 120px;
+    font-size: 40px;
+    background-color: darkgoldenrod;
+    border: 10px solid darkgoldenrod;
+    border-radius: 60px;
+    color: whitesmoke;
+}
+
+div.button input:hover {
+    width: 350px;
+    height: 170px;
+    font-size: 45px;
+    background-color: gold;
+    border: 10px solid gold;
+}
+
+.overlay {
+    visibility: hidden;
+    z-index: 1;
+    position: fixed;
+    width: 100%; height: 100%;
+    left: 0; 
+    top: 0;
+    background-color: rgba(0,0,0, 0.5);
+    overflow-x: hidden;
+}
+
+div.match {
+    visibility: hidden;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 45px;
+    width: 40%;
+    height: 25%;
+    position: absolute;
+    z-index: 2;
+    right: calc(50% - 20%);
+    animation-name: drag;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+div.match img {
+    position: relative;
+    width: 25%;
+    height: 70%;
+    top: 15%;
+}
+
+div.match span {
+    position: relative;
+    bottom: 10%;
+    font-size: 65px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+@-webkit-keyframes move {
+    0% {
+        left: 0;
+    }
+    
+    100% {
+        left: calc(50% - 250px);
+    }
+}
+
+@-webkit-keyframes drag {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: calc(20%);
+    }
+}

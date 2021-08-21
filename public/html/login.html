@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf8" />
+        <title>Sting-login</title>
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="{{ post }}" method="POST">
+                <span class="title">
+                    <span>{{ button_value }}</span>
+                </span>
+                <span class="id">
+                    <input name="id" type="text" placeholder="ID" />
+                </span>
+                <span class="password">
+                    <input name="password" type="password" placeholder="PW" />
+                </span>
+                <span class="login">
+                    <input type="submit" value="{{ button_value }}" />
+                </span>
+                <span class="signup">
+                    <span>{{ msg }} login? </span><a href="{{ href }}">{{ link }}</a>
+                </span>
+            </form>
+        </div>
+    </body>
+</html>

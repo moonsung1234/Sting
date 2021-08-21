@@ -1,0 +1,35 @@
+
+html, body {
+    height: 99%;
+}
+
+body {
+    background-color: orange;
+}
+
+canvas {
+    width : 100%;
+    height: 500px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-top: 7%;
+    background-color: white;
+}
+
+span.point1, span.point2 {
+    display: inline-block;
+    border-radius: 70px;
+    width: 49.5%;
+    color : white;
+    font-family: fantasy;
+    font-size: 50px;
+    text-align: center;
+}
+
+span.point1 {
+    background-color: blue;
+}
+
+span.point2 {
+    background-color: red;
+}
